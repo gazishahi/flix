@@ -2,8 +2,6 @@
 
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-📝 `NOTE` Paste this template at the top of your existing `README.md` file from part 1 of this assignment. (🚫 Remove this paragraph after after checking off completed user stories)
-
 ## Flix Part 2
 
 ### User Stories
@@ -23,7 +21,10 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### Notes
 - I had issues with the backdrop image overlapping the poster image in my details screen. I just repositioned the image views to resolve this.
-- I noticed some movies (like The Flash (2022) and The Flash (1990)) had no backdrops which would cause crashes. I resolved this issue by changing 'let backdropPath = movie["backdrop_path"] as! String' to 'let backdropPath = (movie["backdrop_path"] as? String) ?? "0"' .
+- I noticed some movies (like The Flash (2022) and The Flash (1990)) had no backdrops which would cause crashes. I resolved this issue by changing 
+  'let backdropPath = movie["backdrop_path"] as! String' 
+  to 
+  'let backdropPath = (movie["backdrop_path"] as? String) ?? "0"'
 
 ---
 
